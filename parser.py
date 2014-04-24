@@ -14,13 +14,9 @@ if __name__ == "__main__":
 	#print etree.tostring(tree.getroot(), encoding='utf-8')
 	a = tree.findall('topic/concepts')# concepts narrative question
 
-
 	for item in a:
 	  print etree.tostring( item, encoding='utf-8')
-	  
-	#print etree.dump(a[0])
-
-
+	 
 	###########################################################
 	queryChar = []
 	tree = etree.parse( "queries/query-train.xml").getroot()
@@ -130,24 +126,4 @@ if __name__ == "__main__":
 
 
 	#
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
